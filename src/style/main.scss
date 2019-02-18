@@ -1,0 +1,374 @@
+$leftWidth:300px;
+$bordercolor: orange;
+.container{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  .left{
+   position: absolute;
+   left: -$leftWidth;
+  height: 100%;
+   position: absolute;
+     transition: all 0.5s;
+   .board{
+     border-right: 1px solid $bordercolor;//rgb(70,255,140);
+     color: #fff;
+     background: rgba(0,0,0,0.2);
+     display: inline-block;
+     width: $leftWidth;
+     height: 100%;
+
+    // background: #fff;
+    .logo{
+      border-bottom: 1px solid $bordercolor;
+      img{
+        width: 93%;
+        padding-bottom: 10px;
+      }
+    }
+     .title{
+       padding-top:10px;
+       padding-bottom: 5px;
+       font-size: 30px;
+       //border-bottom: 1px solid rgb(70,255,140);
+       .tips{
+         font-size: 18px;
+       }
+     }
+     ul{
+      // width: 300px ;
+       position: absolute;
+       top:165px;
+       box-sizing:inherit;
+       bottom: 0px;
+       overflow: auto;
+       &::-webkit-scrollbar {
+  width: 4px;
+  }
+  &::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #e1e1e2;
+  &:hover {
+  background-color: #cfcfd1;
+  }
+  }
+       //width: 100%;
+     .jiang{
+      // height: 60px;
+       line-height: 60px;
+    //  border-bottom: 1px solid #ccc;
+     .borde{
+
+     }
+        .option{
+          font-size: 24px;
+           color: #EEB422;
+          // border-bottom: 1px solid $bordercolor;
+            .option-number{
+              font-size: 18px;
+              margin-left: 10px;
+            }
+        }
+
+     }
+     li{
+       list-style:none
+     }
+     li:first-child{
+       padding-top: 10px;
+         //border-bottom: 1px solid rgb(70,255,140);
+     }
+       .select{
+         background: rgba(110,101,101,0.4);
+           border-top: 1px solid $bordercolor;//rgb(70,255,140);
+              border-bottom: 1px solid $bordercolor;
+       }
+       .list{
+         overflow: hidden;
+         height: 0;
+         line-height: 40px;
+        // background: #33ff66;
+         width: 300px;
+         transition: all 0.5s;
+         &::-webkit-scrollbar {
+  width: 4px;
+}
+&::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #e1e1e2;
+  &:hover {
+    background-color: #cfcfd1;
+  }
+}
+
+         .nojiang{
+           font-size: 20px;
+           color: #999;
+         }
+         .imgg{
+           width: 30px;
+           height: 30px;
+           border-radius: 50%;
+           vertical-align: middle;
+         }
+         .namee{
+         font-size: 18px;
+         vertical-align: middle;
+         margin-left: 5px;
+         }
+       }
+       .clickList{
+           //border-top: 1px solid rgb(70,255,140);
+          overflow: auto;
+          height: 350px;
+        //    border-bottom: 1px solid $bordercolor//rgb(70,255,140);
+       }
+   }
+ }
+   .trigger{
+     vertical-align: top;
+       display: inline-block;
+       margin-left: 20px;
+       margin-top: 40px;
+    .more,.baocun1{
+      margin-bottom: 10px;
+      display: block;
+      font-size: 36px;
+      color: $bordercolor;
+    }
+
+  }
+  }
+  .target{
+    left: 0;
+  }
+  h1{
+    position: absolute;
+    color: #fff;
+    left: 50%;
+    font-size: 42px;
+    transform: translateX(-50%);
+  }
+  .img{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.2);
+    padding: 0px;
+    transition: all 0.7s;
+  }
+    .img-container{
+        overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translateX(-50%) translateY(-50%);
+   height: 92%;
+   width: 92%;
+  border-radius: 50%;
+
+
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .bigImg{
+      width: 600px;
+      height: 600px;
+    }
+    .name{
+      color: orange;
+      font-family: 'KaiTi';
+      font-size: 50px;
+      margin-top: 40px;
+    }
+}
+@font-face {font-family: "iconfont";
+  src: url('//at.alicdn.com/t/font_1003035_gyrmfremta.eot?t=1547109921046'); /* IE9 */
+  src: url('//at.alicdn.com/t/font_1003035_gyrmfremta.eot?t=1547109921046#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAASwAAsAAAAAChwAAARiAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDOAqHGIVAATYCJAMYCw4ABCAFhG0HXRtrCMgOJZHAw2BggAFEPPy33//2mZl7v4gk1SSKaSJEPGTWCw1PicyiBNPmJbwjttUsmGBcBl5FfLexaOMj99GR/3PMdE2Rz/PbbE5R4VFJa0we0IAqrxv8nt+BnKifimyuxa8d6oGrXk+g3bQE6GxVgxYgU8i6QDw0G7UgqxiVAUpo1dQdRwvEExBrTSOJMwAeJ78f/yEtZCCpMsjWm7crDVDyi342lxzwv6FDZIaB+7PDPomMFaAQDzudt5GZfwWpfRUtsgu06lmJX8pnmc/m/m8yjhZfi71VJ//LI6sUIRE1iLKTsVcDFb/ogEvml0LYpVKSXiFVJukFqeZSmQTqPS4ZBtEPEGdB8DOcSX5/slpHkFRGeSg1QkX3dCsXdE1H02f5sNO2rJjrjQ1TBqwc7Wv0nY49WLLwaqW7vIcCUdCe1a1n7IlQLdsXQKp7UseuhZEDp4+4HH30qgYWXGFh5t5Ievn+QDRrH+Xsm4EWX6+mR3tPnQnqtHaj9gTB3L00PXo/Qq0Vij8vnxgwxWsKu2SP3+TVaOC+KKorNcpn2ixEDvJXat1eDVHUqKzeL2d6GbymLDlb8uzVyy9snL60t2LJCj9i5spI5fLViBy4qo2CVHJNGhANWiA5qxtO5D0vW4B42HBV64o7TdaI7maEb89/j9wTeadFdXj4DGg4gps2vegA5avtkZPkvpMj69XcondvqLdhN+24A5m99+YOqFdPRtD3FzXt8mdgbpPO8w3fgTE/V438MO/BDPU85SjG68HkhQ0a+E8JaNhgwg+JbsEF+t8oTTlr1pyByei0ZnIyTfPQZyl0uVjju9iXyV2WOC8vFdP3F+ok9gvdlUuV3S+8ehUy/MCSDdY/0qmRhF/9+gPnDKTvIpvjV68+k/vrw0r1HPWqD3M+zFI/h/zUaa1i+IKKm3uODh+hHVFgPjYCl04vnL4DAt8OGFOySjRGtKpkTMku7zHeuyJWW21WTUVdMqCI7OgVXMBMHciL0jfiG83p+TrZDID8mugF0OxfIDf+cX+j9eeE4Z3VBV9ltAjgU8doJhEbKvjbiGDR/0sE1pW1REx1WdYOVgjUHpF9FXbatYV/Vph+9/alHoIphHqogKTFFGStZpAFuwKVDjtQa3UE7ZZVn9xhAI8URQ4sGaog9FoPSbc3kPU6iyzYu1AZ9hZqvUFCu1vhec4Oc2GmynmsFbCB0fVkzHrOwfoWgUpTm2FjnU3LlyUJoxXmXWYXk7q2UQ9VYwfm97HD1c2YJggsw/KcnalSN8M2G8c4ec6C9UKSSRCcecnrt7u+KEnP2YFyBg/TEmAGDJ2eGGZ6HAc2Gi2gGj/fDGZUx0aLH6i54m0F47mYJ2ekSpICIKuVDqjmucx26cYojUDAGqtYPI4do4rsmE37OQxn9yILTE+QxDTD65QnmZuxqDLp+Gr7qzwG7eS0OghEIhESIwmSQu+9v5nFrHUIXF2mRKfl9HUOkZ3jsazFkCuuOFIBAAAA') format('woff2'),
+  url('//at.alicdn.com/t/font_1003035_gyrmfremta.woff?t=1547109921046') format('woff'),
+  url('//at.alicdn.com/t/font_1003035_gyrmfremta.ttf?t=1547109921046') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('//at.alicdn.com/t/font_1003035_gyrmfremta.svg?t=1547109921046#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-baocun:before {
+  content: "\e69d";
+}
+
+.icon-more:before {
+  content: "\e60b";
+}
+
+
+
+.icon-more1:before {
+  content: "\e60c";
+}
+
+.icon-youjiantou:before {
+  content: "\e635";
+}
+
+.icon-more:before {
+  content: "\e60b";
+}
+
+.icon-xiajiantou:before {
+  content: "\e60d";
+}
+
+.icon-more1:before {
+  content: "\e60c";
+}
+
+#canvasOne{
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translateX(-50%) translateY(-50%);
+  background: rgba(255,255,255,0);
+//  border-radius: 50%;
+}
+#space{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.nowChow{
+  z-index: 99;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width:1100px;
+  .fan{
+      transform:rotateY(180deg);
+  }
+  .turnleft{
+  animation:toleft 1s;
+  }
+  .chushi{
+    animation:myfirst 1s;
+  }
+  .now-img{
+      transform-style: preserve-3d;
+      transition: all 0.7s;
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  //  background: rgb(70,255,140);//rgba(0,0,0,0.4);
+    margin-right: 15px;
+  //  background: url("../../static/images/timg.jpg");
+    border: 2px solid rgba(70,255,140,0.8);
+    animation-fill-mode:forwards;
+    .back{
+    //&:after{
+          content: '';
+          position: absolute;
+          width:100%;
+          height:100%;
+          /*牌背面的图片*/
+       overflow: hidden;
+          border-radius:50%;
+          transform-origin:left ;
+          box-shadow:1px 1px 10px 1px #ccc;
+
+          /*将after伪类折叠到box的背面，作为牌的反面*/
+          top:0;
+          left:100%;
+          transform:rotateY(180deg);
+          img{
+            height: 100%;
+            width: 100%;
+          }
+
+      }
+      .username{
+        position: absolute;
+        bottom: -40px;
+        color: rgb(70,255,140);
+        z-index: 999;
+        font-size: 24px;
+          //transform:rotateY(180deg);
+          width: 100%;
+        //  display: none;
+        transition: all 0.7s;
+        transform: scale(0,0);
+      //  width: 0;
+        overflow: hidden;
+      //  height: 0;
+      }
+      .showname{
+      //  animation:toleft 1s;
+    //width: 100%;
+    //  height: 40px;
+      transform: scale(1,1) rotateY(180deg);
+      }
+    .now-img-container{
+      overflow: hidden;
+       position: absolute;
+         left: 50%;
+         top:50%;
+       transform: translateX(-50%) translateY(-50%);
+        height: 100%;
+          width: 100%;
+        border-radius: 50%;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  }
+}
+@keyframes myfirst
+{
+from {
+       width:0;
+      height: 0
+    //  opacity: 0
+    }
+to {
+  //opacity: 1;
+      width:200px;
+       height: 200px;
+     }
+}
+@keyframes toleft
+{
+from {
+  position: absolute;
+//  display: block;
+
+    width: 0;
+    height: 0
+    //  opacity: 0
+    }
+to {
+  width:100px;
+ height: auto;
+ //display: block;
+//  opacity: 1;
+     position: absolute;
+    // width: 100%;
+  //  left:0;
+     }
+}

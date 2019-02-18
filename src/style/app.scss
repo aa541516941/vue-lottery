@@ -1,0 +1,30 @@
+html{font-size:62.5%;
+      height: 100%;
+      line-height: initial;
+    // width: 100%;
+      //-webkit-text-size-adjust:none;
+    }
+    body{
+      overflow: hidden;
+      		background-color: #000;
+   height: 100%;
+  font-size: 12px;
+    }
+html, body, div, span, h1, h2, h3, p, img, i, ul, li, label,
+footer, header, time, mark, audio, video,p {
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  width: 100%;
+  left: 0;
+  top:0;
+  position: absolute;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  height:  100%;
+}
