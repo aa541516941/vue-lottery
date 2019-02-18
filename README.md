@@ -1,7 +1,7 @@
 # choujiang
 vue写的抽奖系统
 在线预览  http://qyh.cloudvos.com:8095/nianhui2.0/#/
-
+<img src='http://qyh.cloudvos.com:8095/123.png'>
 获取员工数据方法为fetchData，保存在数组imgArray<br>
 imgArray结构为<br>
 [{<br>
